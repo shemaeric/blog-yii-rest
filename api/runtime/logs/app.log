@@ -1,0 +1,250 @@
+2020-12-04 15:19:37 [::1][-][9a1e73e20f71db848841066ac82eb20b][error][yii\di\NotInstantiableException] ReflectionException: Class app\api\modules\v1\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct('app\\api\\modules...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies('app\\api\\modules...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build('app\\api\\modules...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\api\\modules...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('v1')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('v1', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/api/index.php(14): yii\base\Application->run()
+#10 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\api\modules\v1\Module". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:510
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies('app\\api\\modules...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build('app\\api\\modules...', Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\api\\modules...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('v1')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('v1', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /opt/lampp/htdocs/basic/api/index.php(14): yii\base\Application->run()
+#9 {main}
+2020-12-04 15:19:37 [::1][-][9a1e73e20f71db848841066ac82eb20b][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'csrftoken' => 'ZPrqhsBR7dp90HDI88EFyuCYXpzERNDqdrxfIZIPcMlXsDeL3JPiZzxE7GfOnkwt'
+    'sessionid' => '59qsqag6p7o8xbl2u1egxlk9d2wnoiaa'
+    'PHPSESSID' => '9a1e73e20f71db848841066ac82eb20b'
+    '_csrf' => '1a97233d16484273f5e4a121ebca03692fc37c8ab913b208e1e094ab65f44f8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CFlsZ_llFiFLyjIguj2BaGEp9j9fxS-s\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'torezug'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'X8pFecJz3tgZkJG2aTvynAAAAAM'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'X8pFecJz3tgZkJG2aTvynAAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'csrftoken=ZPrqhsBR7dp90HDI88EFyuCYXpzERNDqdrxfIZIPcMlXsDeL3JPiZzxE7GfOnkwt; sessionid=59qsqag6p7o8xbl2u1egxlk9d2wnoiaa; PHPSESSID=9a1e73e20f71db848841066ac82eb20b; _csrf=1a97233d16484273f5e4a121ebca03692fc37c8ab913b208e1e094ab65f44f8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CFlsZ_llFiFLyjIguj2BaGEp9j9fxS-s%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.1.1h PHP/7.2.34 mod_perl/2.0.11 Perl/v5.32.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/api/index.php'
+    'REMOTE_PORT' => '49408'
+    'REDIRECT_URL' => '/basic/api/v1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/api/v1'
+    'SCRIPT_NAME' => '/basic/api/index.php'
+    'PHP_SELF' => '/basic/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1607091577.372
+    'REQUEST_TIME' => 1607091577
+]
+2020-12-04 15:19:59 [::1][-][9a1e73e20f71db848841066ac82eb20b][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('v1', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/api/index.php(14): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/api/index.php(14): yii\base\Application->run()
+#2 {main}
+2020-12-04 15:19:59 [::1][-][9a1e73e20f71db848841066ac82eb20b][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'csrftoken' => 'ZPrqhsBR7dp90HDI88EFyuCYXpzERNDqdrxfIZIPcMlXsDeL3JPiZzxE7GfOnkwt'
+    'sessionid' => '59qsqag6p7o8xbl2u1egxlk9d2wnoiaa'
+    'PHPSESSID' => '9a1e73e20f71db848841066ac82eb20b'
+    '_csrf' => '1a97233d16484273f5e4a121ebca03692fc37c8ab913b208e1e094ab65f44f8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CFlsZ_llFiFLyjIguj2BaGEp9j9fxS-s\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'torezug'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'X8pFj8CEsO4CiJPrJ34hugAAAAg'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'X8pFj8CEsO4CiJPrJ34hugAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'csrftoken=ZPrqhsBR7dp90HDI88EFyuCYXpzERNDqdrxfIZIPcMlXsDeL3JPiZzxE7GfOnkwt; sessionid=59qsqag6p7o8xbl2u1egxlk9d2wnoiaa; PHPSESSID=9a1e73e20f71db848841066ac82eb20b; _csrf=1a97233d16484273f5e4a121ebca03692fc37c8ab913b208e1e094ab65f44f8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CFlsZ_llFiFLyjIguj2BaGEp9j9fxS-s%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.1.1h PHP/7.2.34 mod_perl/2.0.11 Perl/v5.32.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/api/index.php'
+    'REMOTE_PORT' => '49422'
+    'REDIRECT_URL' => '/basic/api/v1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/api/v1'
+    'SCRIPT_NAME' => '/basic/api/index.php'
+    'PHP_SELF' => '/basic/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1607091599.914
+    'REQUEST_TIME' => 1607091599
+]
+2020-12-04 15:20:08 [::1][-][9a1e73e20f71db848841066ac82eb20b][error][yii\di\NotInstantiableException] ReflectionException: Class app\api\modules\v1\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct('app\\api\\modules...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies('app\\api\\modules...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build('app\\api\\modules...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\api\\modules...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('v1')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('v1', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/api/index.php(14): yii\base\Application->run()
+#10 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "app\api\modules\v1\Module". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:510
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies('app\\api\\modules...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build('app\\api\\modules...', Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\api\\modules...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('v1')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction('v1', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /opt/lampp/htdocs/basic/api/index.php(14): yii\base\Application->run()
+#9 {main}
+2020-12-04 15:20:08 [::1][-][9a1e73e20f71db848841066ac82eb20b][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'csrftoken' => 'ZPrqhsBR7dp90HDI88EFyuCYXpzERNDqdrxfIZIPcMlXsDeL3JPiZzxE7GfOnkwt'
+    'sessionid' => '59qsqag6p7o8xbl2u1egxlk9d2wnoiaa'
+    'PHPSESSID' => '9a1e73e20f71db848841066ac82eb20b'
+    '_csrf' => '1a97233d16484273f5e4a121ebca03692fc37c8ab913b208e1e094ab65f44f8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CFlsZ_llFiFLyjIguj2BaGEp9j9fxS-s\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'torezug'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'X8pFmFwgH48La9hCuJF90QAAAAU'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'X8pFmFwgH48La9hCuJF90QAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'csrftoken=ZPrqhsBR7dp90HDI88EFyuCYXpzERNDqdrxfIZIPcMlXsDeL3JPiZzxE7GfOnkwt; sessionid=59qsqag6p7o8xbl2u1egxlk9d2wnoiaa; PHPSESSID=9a1e73e20f71db848841066ac82eb20b; _csrf=1a97233d16484273f5e4a121ebca03692fc37c8ab913b208e1e094ab65f44f8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CFlsZ_llFiFLyjIguj2BaGEp9j9fxS-s%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Unix) OpenSSL/1.1.1h PHP/7.2.34 mod_perl/2.0.11 Perl/v5.32.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/api/index.php'
+    'REMOTE_PORT' => '49430'
+    'REDIRECT_URL' => '/basic/api/v1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/api/v1'
+    'SCRIPT_NAME' => '/basic/api/index.php'
+    'PHP_SELF' => '/basic/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1607091608.305
+    'REQUEST_TIME' => 1607091608
+]
