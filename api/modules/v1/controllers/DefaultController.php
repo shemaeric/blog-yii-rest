@@ -13,8 +13,8 @@ class DefaultController extends Controller
      * Renders the index view for the module
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex($id)
     {
-        echo 'Hi';
+        echo $id;
     }
 }

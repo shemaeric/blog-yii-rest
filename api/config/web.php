@@ -50,6 +50,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'v1/dashboard/<id:\w+>' => 'v1/default/index'
             ],
         ],
         

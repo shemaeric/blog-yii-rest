@@ -1,0 +1,11 @@
+# Remove directory listing
+
+Options -Indexes
+IndexIgnore */*
+
+# Follow symbolic link
+Options FollowSymLinks
+RewriteEngine on
+
+# Rerouting to Index
+RewriteRule ^(.+)?$ blog/web/$1
